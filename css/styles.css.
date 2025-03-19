@@ -1,7 +1,7 @@
-/* 🌟 General Styles */
+/* 🌟 General Page Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #000;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a0a0a;
     color: #fff;
     text-align: center;
     margin: 0;
@@ -12,10 +12,11 @@ body {
 header {
     background-color: #00AEEF;
     padding: 20px;
+    text-align: center;
 }
 
 .logo {
-    width: 150px;
+    width: 120px;
 }
 
 nav ul {
@@ -23,29 +24,47 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    gap: 15px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #FF67E7;
+    color: #000;
+}
+
+/* 🌟 Section Styling */
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
 }
 
 /* 🌟 Buttons */
 button {
     background-color: #FF67E7;
     color: #fff;
-    padding: 15px 30px;
+    padding: 12px 25px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     font-size: 18px;
     transition: 0.3s;
+    margin-top: 20px;
 }
 
 button:hover {
@@ -56,14 +75,15 @@ button:hover {
 footer {
     background-color: #00AEEF;
     padding: 20px;
-    margin-top: 20px;
+    text-align: center;
+    margin-top: 40px;
 }
 
 /* 🌟 Image Styling */
 img {
     max-width: 100%;
     height: auto;
-    margin-top: 20px;
+    margin-top: 15px;
     border-radius: 10px;
 }
 
@@ -74,8 +94,9 @@ img {
 }
 
 .schedule-container img {
-    width: 90%;
+    width: 80%;
     max-width: 800px;
+    display: block;
     margin: auto;
 }
 
@@ -86,19 +107,18 @@ img {
 }
 
 .sponsor-container img {
-    width: 200px;
-    margin: 20px;
+    width: 150px;
+    margin: 15px;
 }
 
 /* 🌟 Mobile-Friendly Navigation */
 @media screen and (max-width: 768px) {
     nav ul {
-        display: block;
+        flex-direction: column;
         text-align: center;
     }
 
     nav ul li {
-        display: block;
-        margin: 10px 0;
+        margin-bottom: 10px;
     }
 }
