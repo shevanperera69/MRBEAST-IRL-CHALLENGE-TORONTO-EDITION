@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrBeast IRL Challenge: Media Room</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>MrBeast IRL Challenge: Media Room</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#schedule">Event Schedule</a></li>
+                <li><a href="#press">Press Resources</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to the Official Media Room</h2>
+        <p>Your go-to resource for press coverage, event details, and exclusive content.</p>
+        <button onclick="downloadPressKit()">Download Press Kit</button>
+    </section>
+    
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        <p>See the full list of challenges, meet & greets, and exclusive screenings.</p>
+        <ul>
+            <li>12:00 PM - Gates Open</li>
+            <li>1:00 PM - Live Challenges Begin</li>
+            <li>4:00 PM - Meet & Greet with MrBeast</li>
+            <li>6:00 PM - Prime Video Exclusive Screening</li>
+            <li>9:00 PM - Grand Finale Challenge</li>
+        </ul>
+    </section>
+    
+    <section id="press">
+        <h2>Press Resources</h2>
+        <p>Download high-resolution images, logos, and media assets.</p>
+        <button onclick="showMediaGallery()">View Media Gallery</button>
+        <div id="mediaGallery" style="display:none;">
+            <img src="mrbeast_event.jpg" alt="Event Image">
+            <img src="press_kit.png" alt="Press Kit Cover">
+        </div>
+    </section>
+    
+    <section id="sponsors">
+        <h2>Celebrity & Sponsor Features</h2>
+        <p>Exclusive interviews with MrBeast, Logan Paul, and major sponsors like Prime Video & Tim Hortons.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Press Team</h2>
+        <p>Email: media@mrbeastirl.com | Phone: (647) XXX-XXXX</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 MrBeast IRL Challenge | Powered by Amazon Prime Video</p>
+    </footer>
+    
+    <script>
+        function downloadPressKit() {
+            alert('Your press kit is downloading...');
+            window.location.href = 'press_kit.pdf';
+        }
+        
+        function showMediaGallery() {
+            const gallery = document.getElementById('mediaGallery');
+            gallery.style.display = gallery.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
