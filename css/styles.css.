@@ -1,0 +1,104 @@
+/* 🌟 General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🌟 Header & Navigation */
+header {
+    background-color: #00AEEF;
+    padding: 20px;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* 🌟 Buttons */
+button {
+    background-color: #FF67E7;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #D1001C;
+}
+
+/* 🌟 Footer */
+footer {
+    background-color: #00AEEF;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* 🌟 Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* 🌟 Event Schedule Page */
+.schedule-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.schedule-container img {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* 🌟 Sponsors Page */
+.sponsor-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.sponsor-container img {
+    width: 200px;
+    margin: 20px;
+}
+
+/* 🌟 Mobile-Friendly Navigation */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
