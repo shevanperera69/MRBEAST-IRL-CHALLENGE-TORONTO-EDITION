@@ -6,9 +6,66 @@
     <title>MrBeast IRL Challenge: Media Room</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #00AEEF;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        section {
+            padding: 40px;
+        }
+        button {
+            background-color: #FF67E7;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #D1001C;
+        }
+        footer {
+            background-color: #00AEEF;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        #mediaGallery {
+            display: none;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <img src="mrbeast-logo.svg" alt="MrBeast Logo" width="150">
         <h1>MrBeast IRL Challenge: Media Room</h1>
         <nav>
             <ul>
@@ -43,7 +100,7 @@
         <h2>Press Resources</h2>
         <p>Download high-resolution images, logos, and media assets.</p>
         <button onclick="showMediaGallery()">View Media Gallery</button>
-        <div id="mediaGallery" style="display:none;">
+        <div id="mediaGallery">
             <img src="mrbeast_event.jpg" alt="Event Image">
             <img src="press_kit.png" alt="Press Kit Cover">
         </div>
