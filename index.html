@@ -54,12 +54,22 @@
             margin-top: 20px;
         }
         #mediaGallery {
-            display: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
         }
         img {
             max-width: 100%;
             height: auto;
             margin-top: 20px;
+            border-radius: 10px;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -90,7 +100,7 @@
         <ul>
             <li>12:00 PM - Gates Open</li>
             <li>1:00 PM - Live Challenges Begin</li>
-            <li>4:00 PM - Meet & Greet with MrBeast</li>
+            <li>4:00 PM - Meet & Greet with MrBeast & Logan Paul</li>
             <li>6:00 PM - Prime Video Exclusive Screening</li>
             <li>9:00 PM - Grand Finale Challenge</li>
         </ul>
@@ -101,8 +111,15 @@
         <p>Download high-resolution images, logos, and media assets.</p>
         <button onclick="showMediaGallery()">View Media Gallery</button>
         <div id="mediaGallery">
-            <img src="assets/mrbeast_event.jpg" alt="Event Image">
-            <img src="assets/press_kit.png" alt="Press Kit Cover">
+            <img src="assets/Beast IRL Black.png" alt="Beast IRL Black Logo">
+            <img src="assets/Beast IRL white.png" alt="Beast IRL White Logo">
+            <img src="assets/logan x jimmy.png" alt="MrBeast & Logan Paul">
+            <img src="assets/Tim_Hortons_Logo.png" alt="Tim Hortons Logo">
+            <img src="assets/Amazon_Prime_Video_(11).svg" alt="Amazon Prime Video Logo">
+            <video controls>
+                <source src="assets/beast intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
     </section>
     
@@ -123,12 +140,12 @@
     <script>
         function downloadPressKit() {
             alert('Your press kit is downloading...');
-            window.location.href = 'press_kit.pdf';
+            window.location.href = 'assets/press_kit.zip';
         }
         
         function showMediaGallery() {
             const gallery = document.getElementById('mediaGallery');
-            gallery.style.display = gallery.style.display === 'none' ? 'block' : 'none';
+            gallery.style.display = gallery.style.display === 'none' ? 'flex' : 'none';
         }
     </script>
 </body>
