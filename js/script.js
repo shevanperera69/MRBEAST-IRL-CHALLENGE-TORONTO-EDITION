@@ -5,10 +5,10 @@ function downloadPressKit() {
 }
 
 /* 🌟 Toggle Mobile Menu */
-function toggleMenu() {
+/*function toggleMenu() {
     const menu = document.querySelector('nav ul');
     menu.classList.toggle('show');
-}
+}*/
 
 /* 🌟 Show/Hide Media Gallery */
 function toggleMediaGallery() {
